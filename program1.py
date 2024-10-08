@@ -16,3 +16,8 @@ class Solution(object):
                 stack.append(char)
 
         return not stack
+
+# Example usage:
+solution = Solution()
+print(solution.isValid("{[()]}"))  # Output: True
+print(solution.isValid("{[(])}"))  # Output: False
