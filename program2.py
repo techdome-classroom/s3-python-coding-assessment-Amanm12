@@ -28,7 +28,7 @@ class Solution(object):
         return total
 
 if __name__ == "__main__":
-    roman_numeral = input("Enter a Roman numeral: ")
+    roman_numeral = input("Enter a Roman numeral:")
     solution = Solution()
     result = solution.romanToInt(roman_numeral)
     print(f"The integer value of {roman_numeral} is: {result}")
