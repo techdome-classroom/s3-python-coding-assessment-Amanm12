@@ -27,7 +27,6 @@ class Solution(object):
         
         return total
 
-# Main code to take user input
 if __name__ == "__main__":
     roman_numeral = input("Enter a Roman numeral: ")
     solution = Solution()
