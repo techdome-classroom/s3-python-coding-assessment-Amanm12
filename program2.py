@@ -16,6 +16,7 @@ class Solution(object):
         
         total = 0
         prev_value = 0
+        
         for char in reversed(s):
             value = roman_to_int[char]
             if value < prev_value:
@@ -23,7 +24,12 @@ class Solution(object):
             else:
                 total += value
             prev_value = value
+        
         return total
 
-
-
+# Main code to take user input
+if __name__ == "__main__":
+    roman_numeral = input("Enter a Roman numeral: ")
+    solution = Solution()
+    result = solution.romanToInt(roman_numeral)
+    print(f"The integer value of {roman_numeral} is: {result}")
